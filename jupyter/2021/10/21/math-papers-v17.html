@@ -4,9 +4,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>papers $\quad$ v17 | vision</title>
+<title>papers … v17 | vision</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="papers $\quad$ v17" />
+<meta property="og:title" content="papers … v17" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="boxing labeled equations in math papers, using Faster R-CNN." />
 <meta property="og:description" content="boxing labeled equations in math papers, using Faster R-CNN." />
@@ -16,7 +16,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-10-21T00:00:00-05:00" />
 <script type="application/ld+json">
-{"url":"https://the-ninth-wave.github.io/vision-projects/jupyter/2021/10/21/math-papers-v17.html","@type":"BlogPosting","headline":"papers $\\quad$ v17","dateModified":"2021-10-21T00:00:00-05:00","datePublished":"2021-10-21T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://the-ninth-wave.github.io/vision-projects/jupyter/2021/10/21/math-papers-v17.html"},"description":"boxing labeled equations in math papers, using Faster R-CNN.","@context":"https://schema.org"}</script>
+{"url":"https://the-ninth-wave.github.io/vision-projects/jupyter/2021/10/21/math-papers-v17.html","@type":"BlogPosting","headline":"papers … v17","dateModified":"2021-10-21T00:00:00-05:00","datePublished":"2021-10-21T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://the-ninth-wave.github.io/vision-projects/jupyter/2021/10/21/math-papers-v17.html"},"description":"boxing labeled equations in math papers, using Faster R-CNN.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/vision-projects/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://the-ninth-wave.github.io/vision-projects/feed.xml" title="vision" /><link rel="shortcut icon" type="image/x-icon" href="/vision-projects/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -87,7 +87,7 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">papers $\quad$ v17</h1><p class="page-description">boxing labeled equations in math papers, using Faster R-CNN.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-10-21T00:00:00-05:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">papers ... v17</h1><p class="page-description">boxing labeled equations in math papers, using Faster R-CNN.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-10-21T00:00:00-05:00" itemprop="datePublished">
         Oct 21, 2021
       </time>
        • <span class="read-time" title="Estimated read time">
@@ -136,9 +136,9 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#setup">setup </a></li>
 <li class="toc-entry toc-h2"><a href="#paper-collection,-paper,-and-page-objects">paper collection, paper, and page objects </a>
 <ul>
-<li class="toc-entry toc-h3"><a href="#class-$\quad$-`paper_collection_object`">class $\quad$ `paper_collection_object` </a></li>
-<li class="toc-entry toc-h3"><a href="#class-$\quad$-`paper_object`">class $\quad$ `paper_object` </a></li>
-<li class="toc-entry toc-h3"><a href="#class-$\quad$-`page_object`">class $\quad$ `page_object` </a></li>
+<li class="toc-entry toc-h3"><a href="#class-...-paper_collection_object">class ... paper_collection_object </a></li>
+<li class="toc-entry toc-h3"><a href="#class-...-paper_object">class ... paper_object </a></li>
+<li class="toc-entry toc-h3"><a href="#class-...-page_object">class ... page_object </a></li>
 </ul>
 </li>
 <li class="toc-entry toc-h2"><a href="#model">model </a>
@@ -148,17 +148,17 @@ window.onload = wrap_img;
 </li>
 <li class="toc-entry toc-h2"><a href="#transform-helpers,-torchvision-imports">transform helpers, torchvision imports </a>
 <ul>
-<li class="toc-entry toc-h3"><a href="#class-$\quad$-`Compose`">class $\quad$ `Compose` </a></li>
-<li class="toc-entry toc-h3"><a href="#class-$\quad$-`Repr`">class $\quad$ `Repr` </a></li>
-<li class="toc-entry toc-h3"><a href="#class-$\quad$-`ComposeDouble`-">class $\quad$ `ComposeDouble`  </a></li>
-<li class="toc-entry toc-h3"><a href="#class-$\quad$-`AlbumentationWrapper`">class $\quad$ `AlbumentationWrapper` </a></li>
-<li class="toc-entry toc-h3"><a href="#class-$\quad$-`FunctionWrapperDouble`">class $\quad$ `FunctionWrapperDouble` </a></li>
+<li class="toc-entry toc-h3"><a href="#class-...-Compose">class ... Compose </a></li>
+<li class="toc-entry toc-h3"><a href="#class-...-Repr</font>">class ... Repr&lt;/font&gt; </a></li>
+<li class="toc-entry toc-h3"><a href="#class-...-ComposeDouble">class ... ComposeDouble </a></li>
+<li class="toc-entry toc-h3"><a href="#class-...-AlbumentationWrapper">class ... AlbumentationWrapper </a></li>
+<li class="toc-entry toc-h3"><a href="#class-...-FunctionWrapperDouble">class ... FunctionWrapperDouble </a></li>
 </ul>
 </li>
 <li class="toc-entry toc-h2"><a href="#transforms">transforms </a></li>
 <li class="toc-entry toc-h2"><a href="#torch-dataset-class">torch dataset class </a>
 <ul>
-<li class="toc-entry toc-h3"><a href="#class-$\quad$-`ObjectDetectionDataSet`">class $\quad$ `ObjectDetectionDataSet` </a></li>
+<li class="toc-entry toc-h3"><a href="#class-...-ObjectDetectionDataSet">class ... ObjectDetectionDataSet </a></li>
 </ul>
 </li>
 <li class="toc-entry toc-h2"><a href="#define-and-load-datasets">define and load datasets </a></li>
@@ -174,8 +174,8 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#saving-the-model">saving the model </a></li>
 <li class="toc-entry toc-h2"><a href="#loading-last-model">loading last model </a>
 <ul>
-<li class="toc-entry toc-h3"><a href="#method-$\quad$-`return_margins`">method $\quad$ `return_margins` </a></li>
-<li class="toc-entry toc-h3"><a href="#method-$\quad$-`view_model_prediction`">method $\quad$ `view_model_prediction` </a></li>
+<li class="toc-entry toc-h3"><a href="#method-...-return_margins">method ... return_margins </a></li>
+<li class="toc-entry toc-h3"><a href="#method-...-view_model_prediction">method ... view_model_prediction </a></li>
 </ul>
 </li>
 </ul><!--
@@ -570,8 +570,8 @@ datascience 0.10.6 requires folium==0.2.1, but you have folium 0.8.3 which is in
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr>
-<h3 id="class-$\quad$-`paper_collection_object`">
-<a class="anchor" href="#class-%24%5Cquad%24-%60paper_collection_object%60" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>class</em> $\quad$ <font color="teal">`paper_collection_object`</font><a class="anchor-link" href="#class-%24%5Cquad%24-%60paper_collection_object%60"> </a>
+<h3 id="class-...-paper_collection_object">
+<a class="anchor" href="#class-...-paper_collection_object" aria-hidden="true"><span class="octicon octicon-link"></span></a>class ... <code>paper_collection_object</code><a class="anchor-link" href="#class-...-paper_collection_object"> </a>
 </h3>
 <p><em>args of <code>__init__</code></em></p>
 <ul>
@@ -921,8 +921,8 @@ datascience 0.10.6 requires folium==0.2.1, but you have folium 0.8.3 which is in
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr>
-<h3 id="class-$\quad$-`paper_object`">
-<a class="anchor" href="#class-%24%5Cquad%24-%60paper_object%60" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>class</em> $\quad$ <font color="teal">`paper_object`</font><a class="anchor-link" href="#class-%24%5Cquad%24-%60paper_object%60"> </a>
+<h3 id="class-...-paper_object">
+<a class="anchor" href="#class-...-paper_object" aria-hidden="true"><span class="octicon octicon-link"></span></a>class ... <code>paper_object</code><a class="anchor-link" href="#class-...-paper_object"> </a>
 </h3>
 <p><em>args of <code>__init__</code></em></p>
 <ul>
@@ -1111,8 +1111,8 @@ datascience 0.10.6 requires folium==0.2.1, but you have folium 0.8.3 which is in
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr>
-<h3 id="class-$\quad$-`page_object`">
-<a class="anchor" href="#class-%24%5Cquad%24-%60page_object%60" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>class</em> $\quad$ <font color="teal">`page_object`</font><a class="anchor-link" href="#class-%24%5Cquad%24-%60page_object%60"> </a>
+<h3 id="class-...-page_object">
+<a class="anchor" href="#class-...-page_object" aria-hidden="true"><span class="octicon octicon-link"></span></a>class ... <code>page_object</code><a class="anchor-link" href="#class-...-page_object"> </a>
 </h3>
 <p><em>args of <code>__init__</code></em></p>
 <ul>
@@ -1538,8 +1538,8 @@ HEAD is now at be376084 version check against PyTorch's CUDA version
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr>
-<h3 id="class-$\quad$-`Compose`">
-<a class="anchor" href="#class-%24%5Cquad%24-%60Compose%60" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>class</em> $\quad$ <font color="teal">`Compose`</font><a class="anchor-link" href="#class-%24%5Cquad%24-%60Compose%60"> </a>
+<h3 id="class-...-Compose">
+<a class="anchor" href="#class-...-Compose" aria-hidden="true"><span class="octicon octicon-link"></span></a>class ... <code>Compose</code><a class="anchor-link" href="#class-...-Compose"> </a>
 </h3>
 </div>
 </div>
@@ -1580,8 +1580,8 @@ HEAD is now at be376084 version check against PyTorch's CUDA version
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr>
-<h3 id="class-$\quad$-`Repr`">
-<a class="anchor" href="#class-%24%5Cquad%24-%60Repr%60" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>class</em> $\quad$ <font color="teal">`Repr`</font><a class="anchor-link" href="#class-%24%5Cquad%24-%60Repr%60"> </a>
+<h3 id="class-...-Repr&lt;/font&gt;">
+<a class="anchor" href="#class-...-Repr&lt;/font&gt;" aria-hidden="true"><span class="octicon octicon-link"></span></a>class ... <code>Repr</code>&lt;/font&gt;<a class="anchor-link" href="#class-...-Repr&lt;/font&gt;"> </a>
 </h3>
 </div>
 </div>
@@ -1619,8 +1619,8 @@ HEAD is now at be376084 version check against PyTorch's CUDA version
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr>
-<h3 id="class-$\quad$-`ComposeDouble`-">
-<a class="anchor" href="#class-%24%5Cquad%24-%60ComposeDouble%60-" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>class</em> $\quad$ <font color="teal">`ComposeDouble` </font><a class="anchor-link" href="#class-%24%5Cquad%24-%60ComposeDouble%60-"> </a>
+<h3 id="class-...-ComposeDouble">
+<a class="anchor" href="#class-...-ComposeDouble" aria-hidden="true"><span class="octicon octicon-link"></span></a>class ... <code>ComposeDouble</code><a class="anchor-link" href="#class-...-ComposeDouble"> </a>
 </h3>
 </div>
 </div>
@@ -1660,8 +1660,8 @@ HEAD is now at be376084 version check against PyTorch's CUDA version
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr>
-<h3 id="class-$\quad$-`AlbumentationWrapper`">
-<a class="anchor" href="#class-%24%5Cquad%24-%60AlbumentationWrapper%60" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>class</em> $\quad$ <font color="teal">`AlbumentationWrapper`</font><a class="anchor-link" href="#class-%24%5Cquad%24-%60AlbumentationWrapper%60"> </a>
+<h3 id="class-...-AlbumentationWrapper">
+<a class="anchor" href="#class-...-AlbumentationWrapper" aria-hidden="true"><span class="octicon octicon-link"></span></a>class ... <code>AlbumentationWrapper</code><a class="anchor-link" href="#class-...-AlbumentationWrapper"> </a>
 </h3>
 </div>
 </div>
@@ -1723,8 +1723,8 @@ HEAD is now at be376084 version check against PyTorch's CUDA version
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr>
-<h3 id="class-$\quad$-`FunctionWrapperDouble`">
-<a class="anchor" href="#class-%24%5Cquad%24-%60FunctionWrapperDouble%60" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>class</em> $\quad$ <font color="teal">`FunctionWrapperDouble`</font><a class="anchor-link" href="#class-%24%5Cquad%24-%60FunctionWrapperDouble%60"> </a>
+<h3 id="class-...-FunctionWrapperDouble">
+<a class="anchor" href="#class-...-FunctionWrapperDouble" aria-hidden="true"><span class="octicon octicon-link"></span></a>class ... <code>FunctionWrapperDouble</code><a class="anchor-link" href="#class-...-FunctionWrapperDouble"> </a>
 </h3>
 </div>
 </div>
@@ -1826,8 +1826,8 @@ HEAD is now at be376084 version check against PyTorch's CUDA version
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr>
-<h3 id="class-$\quad$-`ObjectDetectionDataSet`">
-<a class="anchor" href="#class-%24%5Cquad%24-%60ObjectDetectionDataSet%60" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>class</em> $\quad$ <font color="teal">`ObjectDetectionDataSet`</font><a class="anchor-link" href="#class-%24%5Cquad%24-%60ObjectDetectionDataSet%60"> </a>
+<h3 id="class-...-ObjectDetectionDataSet">
+<a class="anchor" href="#class-...-ObjectDetectionDataSet" aria-hidden="true"><span class="octicon octicon-link"></span></a>class ... <code>ObjectDetectionDataSet</code><a class="anchor-link" href="#class-...-ObjectDetectionDataSet"> </a>
 </h3>
 <p><em><code>__init__</code> args</em></p>
 <ul>
@@ -3302,8 +3302,8 @@ engine.py      transforms.py
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr>
-<h3 id="method-$\quad$-`return_margins`">
-<a class="anchor" href="#method-%24%5Cquad%24-%60return_margins%60" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>method</em> $\quad$ <font color="purple">`return_margins`</font><a class="anchor-link" href="#method-%24%5Cquad%24-%60return_margins%60"> </a>
+<h3 id="method-...-return_margins">
+<a class="anchor" href="#method-...-return_margins" aria-hidden="true"><span class="octicon octicon-link"></span></a>method ... <code>return_margins</code><a class="anchor-link" href="#method-...-return_margins"> </a>
 </h3>
 <p><em>args</em></p>
 <ul>
@@ -3405,8 +3405,8 @@ engine.py      transforms.py
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr>
-<h3 id="method-$\quad$-`view_model_prediction`">
-<a class="anchor" href="#method-%24%5Cquad%24-%60view_model_prediction%60" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>method</em> $\quad$ <font color="purple">`view_model_prediction`</font><a class="anchor-link" href="#method-%24%5Cquad%24-%60view_model_prediction%60"> </a>
+<h3 id="method-...-view_model_prediction">
+<a class="anchor" href="#method-...-view_model_prediction" aria-hidden="true"><span class="octicon octicon-link"></span></a>method ... <code>view_model_prediction</code><a class="anchor-link" href="#method-...-view_model_prediction"> </a>
 </h3>
 <table>
 <thead>

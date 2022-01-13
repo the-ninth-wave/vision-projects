@@ -132,9 +132,9 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul class="section-nav">
-<li class="toc-entry toc-h2"><a href="#-training-metrics-for-model_weights_7_50e_lightning-"> training metrics for model_weights_7_50e_lightning  </a></li>
+<li class="toc-entry toc-h2"><a href="#training-metrics-for-latest-trained-model">training metrics for latest trained model </a></li>
 <li class="toc-entry toc-h2"><a href="#setup">setup </a></li>
-<li class="toc-entry toc-h2"><a href="#paper-collection,-paper,-and-page-objects-">paper collection, paper, and page objects  </a>
+<li class="toc-entry toc-h2"><a href="#paper-collection,-paper,-and-page-objects">paper collection, paper, and page objects </a>
 <ul>
 <li class="toc-entry toc-h3"><a href="#class-...-paper_collection_object">class ... paper_collection_object </a></li>
 <li class="toc-entry toc-h3"><a href="#class-...-paper_object">class ... paper_object </a></li>
@@ -155,13 +155,13 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h3"><a href="#class-...-FunctionWrapperDouble">class ... FunctionWrapperDouble </a></li>
 </ul>
 </li>
-<li class="toc-entry toc-h2"><a href="#transforms">transforms </a></li>
+<li class="toc-entry toc-h2"><a href="#data-transforms">data transforms </a></li>
 <li class="toc-entry toc-h2"><a href="#torch-dataset-class">torch dataset class </a>
 <ul>
 <li class="toc-entry toc-h3"><a href="#class-...-ObjectDetectionDataSet">class ... ObjectDetectionDataSet </a></li>
 </ul>
 </li>
-<li class="toc-entry toc-h2"><a href="#define-and-load-datasets-">define and load datasets  </a></li>
+<li class="toc-entry toc-h2"><a href="#define-and-load-datasets">define and load datasets </a></li>
 <li class="toc-entry toc-h2"><a href="#hyperparameters,-logging">hyperparameters, logging </a></li>
 <li class="toc-entry toc-h2"><a href="#metrics">metrics </a></li>
 <li class="toc-entry toc-h2"><a href="#lightning-module">lightning module </a>
@@ -172,7 +172,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#training-setup">training setup </a></li>
 <li class="toc-entry toc-h2"><a href="#training">training </a></li>
 <li class="toc-entry toc-h2"><a href="#saving-the-model">saving the model </a></li>
-<li class="toc-entry toc-h2"><a href="#loading-last-model">loading last model </a>
+<li class="toc-entry toc-h2"><a href="#loading-the-last-model">loading the last model </a>
 <ul>
 <li class="toc-entry toc-h3"><a href="#method-...-return_margins">method ... return_margins </a></li>
 <li class="toc-entry toc-h3"><a href="#method-...-view_model_prediction">method ... view_model_prediction </a></li>
@@ -206,9 +206,11 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="-training-metrics-for-model_weights_7_50e_lightning-">
-<a class="anchor" href="#-training-metrics-for-model_weights_7_50e_lightning-" aria-hidden="true"><span class="octicon octicon-link"></span></a><font color="CornflowerBlue"> training metrics for model_weights_7_50e_lightning </font><a class="anchor-link" href="#-training-metrics-for-model_weights_7_50e_lightning-"> </a>
+<h2 id="training-metrics-for-latest-trained-model">
+<a class="anchor" href="#training-metrics-for-latest-trained-model" aria-hidden="true"><span class="octicon octicon-link"></span></a>training metrics for latest trained model<a class="anchor-link" href="#training-metrics-for-latest-trained-model"> </a>
 </h2>
+<p>( <code>model_weights_7_50e_lightning</code> )</p>
+
 </div>
 </div>
 </div>
@@ -256,7 +258,7 @@ window.onload = wrap_img;
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="setup">
-<a class="anchor" href="#setup" aria-hidden="true"><span class="octicon octicon-link"></span></a><font color="CornflowerBlue">setup</font><a class="anchor-link" href="#setup"> </a>
+<a class="anchor" href="#setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>setup<a class="anchor-link" href="#setup"> </a>
 </h2>
 </div>
 </div>
@@ -559,17 +561,8 @@ datascience 0.10.6 requires folium==0.2.1, but you have folium 0.8.3 which is in
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<hr>
-<hr>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="paper-collection,-paper,-and-page-objects-">
-<a class="anchor" href="#paper-collection,-paper,-and-page-objects-" aria-hidden="true"><span class="octicon octicon-link"></span></a><font color="CornflowerBlue">paper collection, paper, and page objects </font><a class="anchor-link" href="#paper-collection,-paper,-and-page-objects-"> </a>
+<h2 id="paper-collection,-paper,-and-page-objects">
+<a class="anchor" href="#paper-collection,-paper,-and-page-objects" aria-hidden="true"><span class="octicon octicon-link"></span></a>paper collection, paper, and page objects<a class="anchor-link" href="#paper-collection,-paper,-and-page-objects"> </a>
 </h2>
 </div>
 </div>
@@ -1350,7 +1343,7 @@ datascience 0.10.6 requires folium==0.2.1, but you have folium 0.8.3 which is in
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="model">
-<a class="anchor" href="#model" aria-hidden="true"><span class="octicon octicon-link"></span></a><font color="CornflowerBlue">model</font><a class="anchor-link" href="#model"> </a>
+<a class="anchor" href="#model" aria-hidden="true"><span class="octicon octicon-link"></span></a>model<a class="anchor-link" href="#model"> </a>
 </h2>
 </div>
 </div>
@@ -1423,16 +1416,6 @@ datascience 0.10.6 requires folium==0.2.1, but you have folium 0.8.3 which is in
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<hr>
-<hr>
-<hr>
-
-</div>
-</div>
-</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -1464,16 +1447,6 @@ datascience 0.10.6 requires folium==0.2.1, but you have folium 0.8.3 which is in
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<hr>
-<hr>
-<hr>
-
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -1833,8 +1806,8 @@ HEAD is now at be376084 version check against PyTorch's CUDA version
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="transforms">
-<a class="anchor" href="#transforms" aria-hidden="true"><span class="octicon octicon-link"></span></a><font color="CornflowerBlue">transforms</font><a class="anchor-link" href="#transforms"> </a>
+<h2 id="data-transforms">
+<a class="anchor" href="#data-transforms" aria-hidden="true"><span class="octicon octicon-link"></span></a>data transforms<a class="anchor-link" href="#data-transforms"> </a>
 </h2>
 </div>
 </div>
@@ -1885,7 +1858,7 @@ HEAD is now at be376084 version check against PyTorch's CUDA version
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="torch-dataset-class">
-<a class="anchor" href="#torch-dataset-class" aria-hidden="true"><span class="octicon octicon-link"></span></a><font color="CornflowerBlue">torch dataset class</font><a class="anchor-link" href="#torch-dataset-class"> </a>
+<a class="anchor" href="#torch-dataset-class" aria-hidden="true"><span class="octicon octicon-link"></span></a>torch dataset class<a class="anchor-link" href="#torch-dataset-class"> </a>
 </h2>
 </div>
 </div>
@@ -2050,8 +2023,8 @@ HEAD is now at be376084 version check against PyTorch's CUDA version
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="define-and-load-datasets-">
-<a class="anchor" href="#define-and-load-datasets-" aria-hidden="true"><span class="octicon octicon-link"></span></a><font color="CornflowerBlue">define and load datasets </font><a class="anchor-link" href="#define-and-load-datasets-"> </a>
+<h2 id="define-and-load-datasets">
+<a class="anchor" href="#define-and-load-datasets" aria-hidden="true"><span class="octicon octicon-link"></span></a>define and load datasets<a class="anchor-link" href="#define-and-load-datasets"> </a>
 </h2>
 <p>(starting from a list of non-empty pages)</p>
 
@@ -2347,7 +2320,7 @@ HEAD is now at be376084 version check against PyTorch's CUDA version
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="hyperparameters,-logging">
-<a class="anchor" href="#hyperparameters,-logging" aria-hidden="true"><span class="octicon octicon-link"></span></a><font color="CornflowerBlue">hyperparameters, logging</font><a class="anchor-link" href="#hyperparameters,-logging"> </a>
+<a class="anchor" href="#hyperparameters,-logging" aria-hidden="true"><span class="octicon octicon-link"></span></a>hyperparameters, logging<a class="anchor-link" href="#hyperparameters,-logging"> </a>
 </h2>
 </div>
 </div>
@@ -2407,7 +2380,7 @@ ll_test_dict = {}</code></pre>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="metrics">
-<a class="anchor" href="#metrics" aria-hidden="true"><span class="octicon octicon-link"></span></a><font color="CornflowerBlue">metrics</font><a class="anchor-link" href="#metrics"> </a>
+<a class="anchor" href="#metrics" aria-hidden="true"><span class="octicon octicon-link"></span></a>metrics<a class="anchor-link" href="#metrics"> </a>
 </h2>
 </div>
 </div>
@@ -2640,7 +2613,7 @@ engine.py      transforms.py
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="lightning-module">
-<a class="anchor" href="#lightning-module" aria-hidden="true"><span class="octicon octicon-link"></span></a><font color="CornflowerBlue">lightning module</font><a class="anchor-link" href="#lightning-module"> </a>
+<a class="anchor" href="#lightning-module" aria-hidden="true"><span class="octicon octicon-link"></span></a>lightning module<a class="anchor-link" href="#lightning-module"> </a>
 </h2>
 </div>
 </div>
@@ -2854,18 +2827,8 @@ engine.py      transforms.py
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<hr>
-<hr>
-<hr>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="training-setup">
-<a class="anchor" href="#training-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a><font color="CornflowerBlue">training setup</font><a class="anchor-link" href="#training-setup"> </a>
+<a class="anchor" href="#training-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>training setup<a class="anchor-link" href="#training-setup"> </a>
 </h2>
 </div>
 </div>
@@ -3071,7 +3034,7 @@ IPU available: False, using: 0 IPUs
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="training">
-<a class="anchor" href="#training" aria-hidden="true"><span class="octicon octicon-link"></span></a><font color="CornflowerBlue">training</font><a class="anchor-link" href="#training"> </a>
+<a class="anchor" href="#training" aria-hidden="true"><span class="octicon octicon-link"></span></a>training<a class="anchor-link" href="#training"> </a>
 </h2>
 </div>
 </div>
@@ -3079,7 +3042,7 @@ IPU available: False, using: 0 IPUs
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em><font color="DarkOrchid">start training</font></em></p>
+<p><em>start training</em></p>
 
 </div>
 </div>
@@ -3131,7 +3094,7 @@ IPU available: False, using: 0 IPUs
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em><font color="DarkOrchid">end training</font></em></p>
+<p><em>end training</em></p>
 
 </div>
 </div>
@@ -3140,7 +3103,7 @@ IPU available: False, using: 0 IPUs
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="saving-the-model">
-<a class="anchor" href="#saving-the-model" aria-hidden="true"><span class="octicon octicon-link"></span></a><font color="CornflowerBlue">saving the model</font><a class="anchor-link" href="#saving-the-model"> </a>
+<a class="anchor" href="#saving-the-model" aria-hidden="true"><span class="octicon octicon-link"></span></a>saving the model<a class="anchor-link" href="#saving-the-model"> </a>
 </h2>
 </div>
 </div>
@@ -3165,8 +3128,8 @@ IPU available: False, using: 0 IPUs
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="loading-last-model">
-<a class="anchor" href="#loading-last-model" aria-hidden="true"><span class="octicon octicon-link"></span></a><font color="CornflowerBlue">loading last model</font><a class="anchor-link" href="#loading-last-model"> </a>
+<h2 id="loading-the-last-model">
+<a class="anchor" href="#loading-the-last-model" aria-hidden="true"><span class="octicon octicon-link"></span></a>loading the last model<a class="anchor-link" href="#loading-the-last-model"> </a>
 </h2>
 </div>
 </div>
@@ -3182,10 +3145,7 @@ IPU available: False, using: 0 IPUs
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>most recent model:</p>
-<ul>
-<li><code>model_weights_7_50e_lightning</code></li>
-</ul>
+<p><em>most recent model</em> : <code>model_weights_7_50e_lightning</code></p>
 
 </div>
 </div>
